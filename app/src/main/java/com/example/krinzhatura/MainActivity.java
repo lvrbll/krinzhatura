@@ -140,12 +140,12 @@ public class MainActivity extends AppCompatActivity {
         final android.app.Dialog dialog = new android.app.Dialog(this);
         dialog.setContentView(R.layout.custom_dialog);
 
-        Button btnSubmit = dialog.findViewById(R.id.buttonSubmit);
-        btnSubmit.setOnClickListener(new View.OnClickListener() {
+        button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "Wysłano!",
                         Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
             }
         });
 
